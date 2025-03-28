@@ -2,9 +2,11 @@
 
 Warp is the native token bridge's solver that listens for Deposit events in the rollup and creates a withdrawal transaction in the counterparty rollup.
 
+[/typescript/solver/solvers/warp](https://github.com/javabridge/warp-oi-solver/tree/main/typescript/solver/solvers/warp)
+
 ## Warp smartcontract
 
-[Warp Contract]: https://github.com/javabridge/warp-contract
+[https://github.com/javabridge/warp-contract](https://github.com/javabridge/warp-contract)
 
 ## Description
 
