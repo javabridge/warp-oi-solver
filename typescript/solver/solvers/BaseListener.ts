@@ -101,13 +101,13 @@ export abstract class BaseListener<
           );
 
           contract.provider.getNetwork().then((network) => {
-            this.log.info({
-              msg: "Listener started",
-              event: this.eventName,
-              protocol: this.metadata.protocolName,
-              chainId: network.chainId,
-              chainName: chainName,
-            });
+              this.log.info({
+                msg: "Listener started",
+                event: this.eventName,
+                protocol: this.metadata.protocolName,
+                chainId: network.chainId,
+                chainName: chainName,
+              });
           });
         },
       );
@@ -135,7 +135,7 @@ export abstract class BaseListener<
     confirmationBlocks?: number,
   ) {
     const latestBlock = await contract.provider.getBlockNumber();
-    const fromBlock = this.lastProcessedBlocks[chainName] + 1;
+    const fromBlock = this.lastProcessedBlocks[chainName];
     const toBlock = latestBlock - (confirmationBlocks ?? 0);
 
     if (toBlock <= fromBlock) {
@@ -147,10 +147,10 @@ export abstract class BaseListener<
 
       return;
     }
-
+    console.log(filter);
     const events = await contract.queryFilter(filter, fromBlock, toBlock);
 
-    this.log.debug({
+    this.log.info({
       msg: "Polling",
       protocolName: this.metadata.protocolName,
       chainName,

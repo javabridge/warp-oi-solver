@@ -47,6 +47,7 @@ const metadata: Hyperlane7683Metadata = {
     // },
 
     // testnet
+    /*
     {
       address: "0xf614c6bF94b022E16BEF7dBecF7614FFD2b201d3",
       chainName: "optimismsepolia",
@@ -65,10 +66,10 @@ const metadata: Hyperlane7683Metadata = {
       initialBlock: 21491220,
       pollInterval: 1000,
       confirmationBlocks: 2,
-    },
+    },*/
   ],
   customRules: {
-    rules: [
+    rules: [/*
       {
         name: "filterByTokenAndAmount",
         args: {
@@ -92,7 +93,7 @@ const metadata: Hyperlane7683Metadata = {
       },
       {
         name: "intentNotFilled",
-      },
+      },*/
     ],
   },
 };
