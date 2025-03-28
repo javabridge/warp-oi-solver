@@ -1,5 +1,4 @@
 
-import { type RulesMap } from "../../types.js";
 
 /**
  * Custom rules for the solver.
@@ -13,4 +12,4 @@ import { type RulesMap } from "../../types.js";
  * };
  */
 
-export const rules: RulesMap = {};
+export{};

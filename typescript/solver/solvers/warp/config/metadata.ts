@@ -9,7 +9,7 @@ const metadata = {
       chainName: 'gayoroll',
     },
     {
-      address: '0x8Cc95d71a3797EB91De1E288A04Ebd26F12B2939',
+      address: '0xF1bb1f631636Be2A78BC144f2981995AEaD7BBAC',
       chainName: 'balibeans',
     }
   ]

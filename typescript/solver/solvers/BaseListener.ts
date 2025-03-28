@@ -148,7 +148,7 @@ export abstract class BaseListener<
       return;
     }
     console.log(filter);
-    const events = await contract.queryFilter(filter, fromBlock, toBlock);
+    const events = await contract.queryFilter(filter, toBlock, toBlock);
 
     this.log.info({
       msg: "Polling",
