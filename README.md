@@ -12,6 +12,8 @@ Warp is the native token bridge's solver that listens for Deposit events in the 
 
 Warp was created for the Espresso hackathon as a proof of concept (PoC) demonstrating how to use the OpenIntent Framework https://www.openintents.xyz/.
 
+![alt text](https://github.com/javabridge/warp-oi-solver/blob/main/bridge.png?raw=true)
+
 ## Metadata
 
 ### Rollups
